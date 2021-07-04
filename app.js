@@ -74,6 +74,12 @@ const getTickerPrice = async(coin) => {
     data.price = convertCoinToVND(data.price)
   }
   return data;
-
 }
-server.listen(8000);
+app.use('/', function(req, res, next) {
+  res.json("Hello world")
+});
+const port = 8888;
+const host = "10.128.0.2"
+server.listen(port, host);
+console.log(`Server running`)
+
