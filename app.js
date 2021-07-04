@@ -78,6 +78,9 @@ const getTickerPrice = async(coin) => {
 app.use('/', function(req, res, next) {
   res.json("Hello world")
 });
+app.use('/healthy', function(req, res, next) {
+  res.json("Hello world")
+});
 const port = 8888;
 const host = "10.128.0.2"
 server.listen(port, host);
